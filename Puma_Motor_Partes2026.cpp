@@ -1,4 +1,4 @@
-//Universidad Nacional Autónoma de Honduras UNAH
+//Universidad Nacional Autonoma de Honduras UNAH
 // Examen #1 de Programacion Basica 2026
 // Ester Rebeca Palacios Hernandez
 // 20171002844
@@ -7,7 +7,10 @@
 #include <iomanip>
 #include <string>
 #include <cmath>
+#include <cctype>
 #include <sstream>
+
+
 using namespace std;
 
 const double ISV = 0.15;
@@ -598,7 +601,7 @@ int main() {
 
     do {
         facturarCliente();
-        otro = leerSN("\n¿Desea ingresar otro cliente? (S/N): ");
+        otro = leerSN("\nDesea ingresar otro cliente? (S/N): ");
     } while (otro == 'S');
 
     mostrarEstadisticas();
